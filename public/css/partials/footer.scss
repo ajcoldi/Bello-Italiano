@@ -1,0 +1,13 @@
+@import '../global.scss';
+
+#footerUL{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    li{
+        padding: 40px;
+        a{
+            color: $light;
+        }
+    }
+}

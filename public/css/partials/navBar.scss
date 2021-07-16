@@ -1,0 +1,55 @@
+@import '../global.scss';
+
+nav{
+    background: $red;
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 0 5px $dark-blue;
+    div{
+        
+        a{
+            color: $light;
+            display: flex;
+            align-items: center;
+            img{
+                filter: invert(1);
+                width: 50px;
+            }
+        }
+    }
+    ul{
+        display: flex;
+        
+        li{
+            a{
+                color: $light;
+                text-decoration: none;
+                display: block;   
+                padding: 30px 20px;         
+            }
+        }
+    }
+}
+#login-drop-down{
+    position: absolute;
+    background: $light;
+    border: solid 2px $red;
+    padding: 40px;
+    margin-top: 118px;
+    display: none;
+    form{
+        grid-gap: 10px;
+    }
+
+    #hideIcon{
+        width: 20px;
+    }
+    #hideIcon:hover{
+        cursor: pointer;
+    }
+}

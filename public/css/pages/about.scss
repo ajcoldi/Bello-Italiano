@@ -1,0 +1,27 @@
+@import '../global.scss';
+
+#section-about{
+    margin-top: 118px;
+    #aboutInfoWrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+
+        div{
+
+        }
+    }
+    table{
+        tr{
+            td{
+            padding: 8px;
+            }
+        }
+    }
+    ul{
+        li{
+            padding: 10px;
+        }
+    }
+}
