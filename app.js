@@ -2,6 +2,10 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-app.get('/', (req, res) => res.send('Hello World!'));
+app.set('view engine', 'ejs');
+app.use(express.static('public'));
 
-app.listen(process.env.PORT || port, () => console.log(`Example app listening at http://localhost:${port}`));
+const pageRoutes = require('./routes/pageRoutes');
+app.use('/', pageRoutes);
+
+app.listen(process.env.PORT || port, () => console.log(`Listening on port: ${port}`));
