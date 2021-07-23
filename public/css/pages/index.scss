@@ -38,6 +38,7 @@
     }   
 }
 #index-section-5{
+    
     .section-5-col{
         height: 90vh;
         justify-content: space-between;
@@ -67,7 +68,7 @@
             padding: 20px 100px;
             background: rgb(139, 209, 192);
             color: $light;
-            font-size: 25px;
+            font-size: 20px;
             font-weight: 800;
         }
     }
@@ -84,3 +85,86 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+
+
+    @media only screen and (max-width: 1100px) {
+        #index-section-5{
+            flex-direction: column;
+            .section-5-col{
+                height: 90vh;
+                justify-content: space-between;
+                color: $light;
+                width: 100%;
+                flex: 1;
+                padding: 40px;
+                div{
+                    h1{
+                        font-size: 80px;
+                         letter-spacing: 10px;
+                         text-transform: capitalize;
+            
+                    }
+                    h2{
+                        color: rgb(221, 221, 36);
+                        box-shadow: 0 0 2px rgb(255, 230, 0);
+                        font-size: 40px;
+                        letter-spacing: 10px;
+                        text-transform: capitalize;
+            
+                    }
+                }
+               
+                button{
+                    font-size: 16px;   
+                }
+            }
+        
+            }
+            #row-1{
+                background: url('../../images/gelato.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            #row-3{
+                background: url('../../images/winemenu.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+    
+}
+
+
+@media only screen and (max-width: 800px) {
+    #index-section-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        #pizzaImg-wrap{
+            background: url('../../images/pizza.jpg');
+            background-size: cover;
+        }
+        div{
+            flex: 1;
+            div{
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+    #index-section-3{
+        div{
+            background: url('../../images/section3Background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            div{
+                width: 400px;
+                margin: auto;
+                background: $light;
+                    
+            }
+        }   
+    }
+}

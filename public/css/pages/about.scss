@@ -25,3 +25,12 @@
         }
     }
 }
+
+@media only screen and (max-width: 800px) {
+    #section-about{
+        #aboutInfoWrap{
+            flex-direction: column;
+            grid-gap: 20px;
+        }
+    }
+}

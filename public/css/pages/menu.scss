@@ -67,10 +67,29 @@
             }
         }
     }
-    
- 
-                    
-           
+}
+
+@media only screen and (max-width: 800px) {
+    #section-menu{
+        .menuKey{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 20px;
+            div{
+                display: flex;
+                align-items: center;
+                grid-gap: 20px;
+                img{
         
-    
+                }
+            }
+        }
+        .menuContainer{
+            flex-direction: column;
+            #menuDesc{
+                padding: 0 40px;
+            }
+        }
+    }
 }
