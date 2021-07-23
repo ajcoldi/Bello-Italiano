@@ -915,6 +915,7 @@ p {
   }
   #section-menu .menuContainer {
     flex-direction: column;
+    grid-gap: 40px;
   }
   #section-menu .menuContainer #menuDesc {
     padding: 0 40px;
